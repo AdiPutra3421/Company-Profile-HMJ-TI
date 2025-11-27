@@ -64,7 +64,6 @@
         .main-layout {
             display: grid;
             grid-template-columns: 3fr 1fr;
-            /* Kolom kiri 3/4, kolom kanan 1/4 */
             gap: 30px;
         }
 
@@ -112,7 +111,7 @@
         }
 
 
-        /* --- Kolom Kanan: UOVM & Tanggal --- */
+        
         .right-column {
             background-color: #e6f7ff;
             /* Latar belakang biru muda */
