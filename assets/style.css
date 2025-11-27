@@ -405,8 +405,63 @@ header {
   padding: 0 30px;
   width: 80%;
   margin: auto;
+  text-align: center;
 }
 
-.aspirasi h2{
-  text-align: center;
+.form-container {
+    width: 85%;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.input-group {
+    margin-bottom: 18px;
+}
+
+label {
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #e3dcdc;
+    outline: none;
+    font-size: 14px;
+}
+
+textarea {
+    height: 250px;
+    resize: none;
+    background: #e3dcdc;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.half {
+    flex: 1;
+}
+
+.tombol-kirim {
+    background: #061544;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 10px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-kirim:hover {
+    opacity: 0.9;
 }
