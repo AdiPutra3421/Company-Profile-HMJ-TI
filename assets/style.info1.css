@@ -30,6 +30,7 @@ body {
     position: relative;
     border-radius: 10px;
     margin-bottom: 30px;
+    z-index: 1;
 }
 
 .epim-header::before {
