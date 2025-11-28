@@ -1,4 +1,4 @@
-// Smooth Scroll untuk tombol "Lihat Perjalanan"
+// Smooth Scroll untuk tombol "Selengkapnya"
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -8,7 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Animasi muncul saat scroll
+// Scroll Reveal Animation
 const revealElements = document.querySelectorAll(".reveal, .reveal-item");
 
 function revealOnScroll() {
