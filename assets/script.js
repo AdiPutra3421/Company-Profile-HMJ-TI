@@ -63,3 +63,6 @@ $(document).ready(function () {
       });
   });
 });
+
+// assets/contact.js
+// posisi Politeknik Negeri Jember
