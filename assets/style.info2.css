@@ -21,7 +21,7 @@
         }
 
         .aom-header {
-            background-image: url('../photo-informasi/nidji.jpg');
+            background-image: url('images/informasi/nidji.jpg');
             background-size: cover;
             background-position: center;
             color: white;

@@ -20,7 +20,7 @@ body {
 
 
 .lkmm-header {
-    background-image: url('../photo-informasi/lkmm.jpg');
+    background-image: url('images/informasi/lkmm.jpg');
     background-size: cover;
     background-position: center;
     color: white;

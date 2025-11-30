@@ -96,21 +96,21 @@
 
 /* Card 1: Lomba EPIM */
 .card-1 {
-    background-image: url('../photo-informasi/epim1.jpg');
+    background-image: url('images/informasi/epim1.jpg');
     background-size: cover;
     background-position: center;
 }
 
 /* Card 2: NDJI */
 .card-2 {
-    background-image: url('../photo-informasi/nidji.jpg');
+    background-image: url('images/informasi/nidji.jpg');
     background-size: cover;
     background-position: center;
 }
 
 /* Card 3: LKMM PRA-TD */
 .card-3 {
-    background-image: url('../photo-informasi/lkmm.jpg');
+    background-image: url('images/informasi/lkmm.jpg');
     background-size: cover;
     background-position: bottom;
 }
