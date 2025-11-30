@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="assets/aos-master/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   </head>
   <body>
@@ -67,12 +68,12 @@
       <div class="hero-overlay"></div>
 
       <div class="hero-content">
-        <h1>
+        <h1 data-aos="fade-up">
           HIMPUNAN MAHASISWA<br />
           JURUSAN TEKNOLOGI INFORMASI
         </h1>
 
-        <p>
+        <p data-aos="fade-up">
           Himpunan Mahasiswa Jurusan Teknologi Informasi memiliki tujuan untuk
           mengembangkan sumber daya manusia yang berkualitas dan berdedikasi
           dalam bidang teknologi informasi, dengan mengedepankan semangat
@@ -82,23 +83,23 @@
     </section>
 
     <section class="visi-section">
-      <h2>VISI</h2>
+      <h2 data-aos="fade-up">VISI</h2>
       <hr />
 
       <div class="visi-container">
-        <div class="visi-image">
+        <div class="visi-image" data-aos="fade-up">
           <img src="assets/images/about-image 1.png" alt="visi hmj-ti" />
         </div>
 
         <div class="visi-text">
-          <p>
+          <p data-aos="fade-up">
             Membangun HMJ TI Politeknik Negeri Jember sebagai wadah yang
             menjunjung jiwa sosial dan kekeluargaan untuk mendukung pengembangan
             akademik serta non-akademik mahasiswa guna menciptakan lingkungan
             yang lebih baik.
           </p>
 
-          <a href="visi-misi.html" class="btn-visi"
+          <a href="visi-misi.html" class="btn-visi" data-aos="fade-up"
             >selengkapnya <i class="fa-solid fa-arrow-right"></i
           ></a>
         </div>
@@ -107,7 +108,7 @@
 
     <!-- ================= INFORMASI CAROUSEL ================= -->
     <section class="info-section">
-      <h3>INFORMASI</h3>
+      <h3 data-aos="fade-up">INFORMASI</h3>
       <hr />
 
       <div class="carousel-container">
@@ -191,5 +192,12 @@
       <p>Copyright © 2025 Design & Developed</p>
     </div>
     <script src="assets/script.js"></script>
+    <script src="assets/aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+        once: true,
+      });
+    </script>
   </body>
 </html>
