@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HMJTI - Politeknik Negeri Jember</title>
     <link rel="stylesheet" href="assets/style.css" />
     <link
       rel="stylesheet"
@@ -14,10 +14,23 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/aos-master/dist/aos.css" />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
   </head>
   <body>
-    <!-- navbar -->
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen">
+      <div class="spinner"></div>
+    </div>
+    <!-- Navbar -->
     <header>
       <nav class="navbar">
         <div class="logo">
@@ -62,17 +75,14 @@
       </nav>
     </header>
 
-    <!-- hero -->
-
+    <!-- Hero Section -->
     <section class="hero">
       <div class="hero-overlay"></div>
-
       <div class="hero-content">
         <h1 data-aos="fade-up">
           HIMPUNAN MAHASISWA<br />
           JURUSAN TEKNOLOGI INFORMASI
         </h1>
-
         <p data-aos="fade-up">
           Himpunan Mahasiswa Jurusan Teknologi Informasi memiliki tujuan untuk
           mengembangkan sumber daya manusia yang berkualitas dan berdedikasi
@@ -82,15 +92,14 @@
       </div>
     </section>
 
+    <!-- Visi Section -->
     <section class="visi-section">
       <h2 data-aos="fade-up">VISI</h2>
       <hr />
-
       <div class="visi-container">
         <div class="visi-image" data-aos="fade-up">
-          <img src="assets/images/about-image 1.png" alt="visi hmj-ti" />
+          <img src="assets/images/about-image 1.png" alt="Visi HMJ-TI" />
         </div>
-
         <div class="visi-text">
           <p data-aos="fade-up">
             Membangun HMJ TI Politeknik Negeri Jember sebagai wadah yang
@@ -98,49 +107,85 @@
             akademik serta non-akademik mahasiswa guna menciptakan lingkungan
             yang lebih baik.
           </p>
-
-          <a href="visi-misi.html" class="btn-visi" data-aos="fade-up"
-            >selengkapnya <i class="fa-solid fa-arrow-right"></i
-          ></a>
+          <a href="visi-misi.html" class="btn-visi" data-aos="fade-up">
+            selengkapnya <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ================= INFORMASI CAROUSEL ================= -->
+    <!-- Informasi Carousel -->
     <section class="info-section">
       <h3 data-aos="fade-up">INFORMASI</h3>
       <hr />
-
-      <div class="carousel-container">
-        <button class="nav-btn left-btn" id="prev-btn">
-          <i class="fas fa-chevron-left"></i>
-        </button>
-
-        <div class="info-carousel-wrapper">
-          <div class="info-carousel" id="info-carousel">
-            <div class="carousel-item">
-              <img src="assets/images/slide1.png" alt="Kegiatan 1" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/slide2.png" alt="Kegiatan 2" />
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/slide3.png" alt="Kegiatan 3" />
+      <div class="info-slider" data-aos="fade-up">
+        <div>
+          <div class="info-card">
+            <img src="assets/images/informasi/epim1.jpg" alt="EPIM 2025" />
+            <div class="info-card-content">
+              <h3>EPIM 2025</h3>
+              <p>Pengumuman juara lomba EPIM 2025...</p>
+              <a href="#" class="info-card-btn">Selengkapnya</a>
             </div>
           </div>
         </div>
-
-        <button class="nav-btn right-btn" id="next-btn">
-          <i class="fas fa-chevron-right"></i>
-        </button>
+        <div>
+          <div class="info-card">
+            <img src="assets/images/informasi/nidji.jpg" alt="AOM 11" />
+            <div class="info-card-content">
+              <h3>Art Of Manunggalan</h3>
+              <p>Akhirnya tiba! AOM 11.0...</p>
+              <a href="#" class="info-card-btn">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="info-card">
+            <img src="assets/images/informasi/lkmm.jpg" alt="Videografi" />
+            <div class="info-card-content">
+              <h3>LKMM PRA-TD</h3>
+              <p>LKMM merupakan program pelatihan...</p>
+              <a href="#" class="info-card-btn">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="info-card">
+            <img src="assets/images/informasi/epim1.jpg" alt="EPIM 2025" />
+            <div class="info-card-content">
+              <h3>EPIM 2025</h3>
+              <p>Pengumuman juara lomba EPIM 2025...</p>
+              <a href="#" class="info-card-btn">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="info-card">
+            <img src="assets/images/informasi/nidji.jpg" alt="AOM 11" />
+            <div class="info-card-content">
+              <h3>Art Of Manunggalan</h3>
+              <p>Akhirnya tiba! AOM 11.0...</p>
+              <a href="#" class="info-card-btn">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="info-card">
+            <img src="assets/images/informasi/lkmm.jpg" alt="Videografi" />
+            <div class="info-card-content">
+              <h3>LKMM PRA-TD</h3>
+              <p>LKMM merupakan program pelatihan...</p>
+              <a href="#" class="info-card-btn">Selengkapnya</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ================= FOOTER ================= -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-grid">
-          <!-- Kolom About HMJTI -->
           <div class="footer-col about-hmjti">
             <div class="footer-logo">
               <img
@@ -157,7 +202,6 @@
             </p>
           </div>
 
-          <!-- Kolom Kontak -->
           <div class="footer-col contact-info">
             <h2>KONTAK</h2>
             <p>
@@ -170,7 +214,6 @@
             </p>
           </div>
 
-          <!-- Kolom Sosial Media -->
           <div class="footer-col social-media">
             <h2>SOSIAL MEDIA</h2>
             <ul>
@@ -188,16 +231,57 @@
         </div>
       </div>
     </footer>
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top" aria-label="Kembali ke atas">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Copyright -->
     <div class="copyright">
-      <p>Copyright © 2025 Design & Developed</p>
+      <p>Copyright © 2025 Design & Developed by HMJTI</p>
     </div>
-    <script src="assets/script.js"></script>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/aos-master/dist/aos.js"></script>
+
     <script>
+      // Init AOS
       AOS.init({
         duration: 1500,
         once: true,
       });
+
+      // Init Slick Carousel
+      $(document).ready(function () {
+        $(".info-slider").slick({
+          dots: true,
+          arrows: true,
+          infinite: true,
+          speed: 1500,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
     </script>
+    
   </body>
 </html>

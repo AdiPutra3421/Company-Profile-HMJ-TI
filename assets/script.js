@@ -1,36 +1,4 @@
 $(document).ready(function () {
-  const $carousel = $("#info-carousel");
-  const $items = $(".carousel-item");
-  const $prev = $("#prev-btn");
-  const $next = $("#next-btn");
-
-  const ITEM_WIDTH = 300;
-  const GAP = 20;
-  const MOVE = ITEM_WIDTH + GAP;
-  let index = 0;
-
-  function updateCarousel() {
-    $carousel.css({
-      transition: "transform 0.5s cubic-bezier(0.22,0.61,0.36,1)",
-      transform: `translateX(${-index * MOVE}px)`,
-    });
-  }
-
-  $next.on("click", () => {
-    index = (index + 1) % 3;
-    updateCarousel();
-  });
-
-  $prev.on("click", () => {
-    index = (index - 1 + 3) % 3;
-    updateCarousel();
-  });
-
-  // Auto
-  setInterval(() => $next.click(), 4000);
-});
-
-$(document).ready(function () {
   let timeout;
 
   $(".dropdown").each(function () {
@@ -64,5 +32,21 @@ $(document).ready(function () {
   });
 });
 
-// assets/contact.js
-// posisi Politeknik Negeri Jember
+const backToTop = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 200) {
+    backToTop.classList.add("show");
+  } else {
+    backToTop.classList.remove("show");
+  }
+});
+
+// Smooth Scroll
+backToTop.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
