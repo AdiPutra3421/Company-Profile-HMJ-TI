@@ -531,13 +531,12 @@ header {
   width: 100%;
 }
 
-.aspirasi input,
-.aspirasi textarea {
+.aspirasi input,.aspirasi textarea {
   width: 100%;
   padding: 12px;
   border-radius: 10px;
   border: 1px solid #ccc;
-  background: #f9f9f9;
+  background: #bcbbbb;
   outline: none;
   font-size: 14px;
   transition: border 0.2s;
@@ -607,5 +606,89 @@ header {
 @media (max-width: 480px) {
   .nav-links {
     display: none; /* Untuk versi mobile, bisa tambah hamburger nanti */
+  }
+}
+
+.contact-section {
+  padding: 40px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.contact-cards {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-card {
+  width: 350px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.contact-card .card-header {
+  background: #d4f9f9;       
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.contact-card .card-header i {
+  font-size: 18px;
+}
+
+.contact-card .card-body {
+  padding: 20px;
+}
+
+.contact-card .card-body p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.contact-card .card-body a {
+  color: black;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.social-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-card ul li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-card ul li i {
+  font-size: 18px;
+}
+
+.social-card ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
   }
 }
